@@ -12,5 +12,5 @@ app.use("/api/rates" , exchange)
 
 
 app.listen( process.env.PORT || 3000 , ()=>{
-    console.log(`server running at port ${PORT}`)
+    console.log(`server running at port 3000`)
 })
