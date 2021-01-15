@@ -9,8 +9,8 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 app.use("/api/rates" , exchange)
 
-const PORT = process.env.PORT || 5000
+const PORT = 3000
 
-app.listen( PORT , ()=>{
+app.listen( process.env.PORT || 3000 , ()=>{
     console.log(`server running at port ${PORT}`)
 })
